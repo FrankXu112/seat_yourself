@@ -24,6 +24,8 @@ class ReviewsController < ApplicationController
 
 	private
 	def review_params
+		params[:review][:rating] = params[:score]
+		p params: params
 		params.require(:review).permit(:comment, :rating, :restaurant_id)
 	end
 

@@ -1,4 +1,5 @@
-<h3>Reserve Your Seats Below!</h3>
+<section class="reservation">
+<h2>Reserve Your Seats Below!</h2>
 <% if current_user %>
   <%= form_for([@restaurant, @reservation]) do |f| %>
     <% if @reservation.errors.any? %>
@@ -28,3 +29,4 @@
 <% else %>
   <h4>Please Log in first!</h4>
 <% end %>
+</section>

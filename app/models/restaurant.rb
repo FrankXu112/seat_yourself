@@ -6,4 +6,5 @@ class Restaurant < ActiveRecord::Base
 	has_many :reviewers, through: :reviews
 
 	belongs_to :category
+
 end

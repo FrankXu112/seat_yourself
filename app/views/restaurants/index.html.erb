@@ -1,10 +1,12 @@
+<div class="font-effect-fire-animation">
 <h1>Top 10 Restaurants</h1>
+</div>
 <ol class="index">
   <% @restaurants.each do |r| %>
-		<li>
+		<li>	
 			<%= link_to "#{r.name}  #{r.phone}", restaurant_path(r) %>
 			<span class="label label-default"><%=r.category.name %></span><br>
-			<%= image_tag r.url %>
+			<%= image_tag r.url, :class => "food" %>
 		</li>
 	<% end %>
 </ol>

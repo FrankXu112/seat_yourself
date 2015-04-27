@@ -29,8 +29,7 @@ body {
   background-size: cover;
 }
 
-
-img{
+.food{
   height: 300px;
   width: 500px;
 }
@@ -56,6 +55,15 @@ section.review {
   font-size: 30px;
 }
 
+section.reservation{
+  color: blue;
+  font-size: 25px;
+}
+
+section.sign{
+  color: blue;
+}
+
 .navbar-brand{
   font-size: 30px;
 }
@@ -65,5 +73,11 @@ ol.index{
   margin-right: auto;
   width: 50%;
 }
+
+div.actions{
+  position: relative;
+  left: 94%;
+}
+
 
 
