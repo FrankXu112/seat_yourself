@@ -1,5 +1,5 @@
 <h1>Top 10 Restaurants</h1>
-<ul>
+<ol class="index">
   <% @restaurants.each do |r| %>
 		<li>
 			<%= link_to "#{r.name}  #{r.phone}", restaurant_path(r) %>
@@ -7,5 +7,5 @@
 			<%= image_tag r.url %>
 		</li>
 	<% end %>
-</ul>
+</ol>
  

@@ -20,3 +20,50 @@
 .container {
 	padding-top: 50px;
 }
+
+body {
+  background: url(http://www.cafe-lucas.de/images/background-tisch.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+img{
+  height: 300px;
+  width: 500px;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+p{
+  font-size: 25px;
+  color: white;
+}
+
+li{
+  font-size: 25px;
+  color: white;
+}
+
+section.review {
+  color: blue;
+  font-size: 30px;
+}
+
+.navbar-brand{
+  font-size: 30px;
+}
+
+ol.index{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
