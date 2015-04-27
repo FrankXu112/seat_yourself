@@ -1,0 +1,18 @@
+<h1>Your Reservations</h1>
+
+<% if @user.reservations.last == nil %>
+	<p>Sorry, you currently have no reservations.</p>
+<% else %>
+<ol>
+<% @reservations.each do |r| %>
+	<li>	
+		Restaurant name: <%= r.restaurant.name %><br>
+		Reserved time: <%= r.time %><br>
+		Seats: <%= r.seats %><br>
+	</li>
+	
+<% end %>
+</ol>
+<% end %>
+
+<%= link_to "Back", restaurants_path %>
