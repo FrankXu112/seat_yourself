@@ -32,7 +32,9 @@
 	<% end %>			
 </p>
 <% end %>
+</section>
 
+<section class="add_review">
 <% if current_user %>
 	<h3>Add your comment below!</h3>
 	<%= form_for([@restaurant, @review]) do |f| %>
@@ -54,7 +56,7 @@
     	<%= f.label :rating %>
     	<%= rating_for @review, "rating" %>
     </div>
-    <div class="actions">
+    <div>
       <%= f.submit "submit" %>
     </div>
   <% end %>
