@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+label.star {
+	background-image: url("/assets/star-off.png");
+	width: 16px;
+	height: 16px;
+}
+
+input[type=radio]:checked + label.star {
+	background-image: url("/assets/star-on.png");
+}
+
+.hidden { display: none; }

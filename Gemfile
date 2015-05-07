@@ -30,8 +30,6 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem "twitter-bootstrap-rails"
 
-gem 'ratyrate'
-
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -45,7 +43,8 @@ group :development, :test do
   gem 'favorite_things'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  gem 'best_errors'
+  gem 'pry-rails'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'

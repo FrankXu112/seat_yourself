@@ -54,7 +54,10 @@
     </div>
     <div class="rating">
     	<%= f.label :rating %>
-    	<%= rating_for @review, "rating" %>
+      <% (1..5).each do |rating| %>
+        <%= f.radio_button(:rating, rating, class: "hidden") %>
+        <label class="star" for="review_rating_<%= rating %>"></label>
+      <% end %>
     </div>
     <div>
       <%= f.submit "submit" %>

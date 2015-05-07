@@ -19,5 +19,3 @@
 //= require twitter/bootstrap
 
 //= require_tree .
-//= require jquery.raty
-//= require ratyrate
